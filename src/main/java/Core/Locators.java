@@ -12,26 +12,25 @@ public static By setPretragaProizvoda(String vrstaProizvoda){
 public static By pretragaLaptopKategorije = By.xpath("//a[@href='/prenosni-racunari'][text()='Laptop računari']");
 public static By odabirLaptopKategorije = By.xpath("//a[@href='/prenosni-racunari/laptop-racunari'][text()='Laptop računari']");
 
+public static By setFilterKategorija(String filterKategorija){
+    String filterKategorijaLocator = "(//span[@class='Collapsible__trigger is-closed'][text()='*****'])[2]";
+    return By.xpath(filterKategorijaLocator.replace("*****",filterKategorija));}
+
 public static By setFilterValue(String filterValue){
-    String filterValueLocator = "(//div[@class='filter']//span[text()='*****'])[1]";
+    String filterValueLocator = "(//div[@class='filter']//span[text()='*****'])[2]";
     return By.xpath(filterValueLocator.replace("*****", filterValue));}
 
 
-
-public static By filterTipProcesora = By.xpath("//span[@id='collapsible-trigger-1718632811832']");
-public static By odabirTipProcesora = By.xpath();
-
-public static By filterRamMemorije = By.xpath();
-public static By setFilterTipRamDdrVga (String filterRamDdrVga){
-    String ramDDRVgaLokator = "//span[@id='collapsible-trigger-1718632811833'][text()='*****']";
-    return By.xpath(ramDDRVgaLokator.replace("*****",filterRamDdrVga));}
-
 public static By setSortOrder(String sortOrder){
+    String sortOrderLocator = "//select[@name='*****']";
+    return By.xpath(sortOrderLocator.replace("*****",sortOrder));}
 
-return this;}
-public static By searchResult = By.xpath();
-
-
-
-
+public static By setSelectSearchResult (String searchResult){
+    String searchResultLocator = "(//a[@href='/laptop-racunari/*****'])[1]";
+    return By.xpath(searchResultLocator.replace("*****", searchResult));}
 }
+//public static By filterTipProcesora = By.xpath("//span[@id='collapsible-trigger-1718632811832']");
+//public static By odabirTipProcesora = By.xpath();
+
+//public static By filterRamMemorije = By.xpath();
+//public static By sortMenu = By.xpath("");
