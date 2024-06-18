@@ -9,8 +9,8 @@ public static By setPretragaProizvoda(String vrstaProizvoda){
     String proizvodLocator = "//button[@class='megabtn ']//span[text()='*****']";
     return By.xpath(proizvodLocator.replace("*****",vrstaProizvoda));}
 
-public static By pretragaLaptopKategorije = By.xpath("//a[@href='/prenosni-racunari'][text()='Laptop računari']");
-public static By odabirLaptopKategorije = By.xpath("//a[@href='/prenosni-racunari/laptop-racunari'][text()='Laptop računari']");
+public static By selectFilterLaptop = By.xpath("//a[@href='/prenosni-racunari'][text()='Laptop računari']");
+public static By selectLaptopKategorije = By.xpath("//a[@href='/prenosni-racunari/laptop-racunari'][text()='Laptop računari']");
 
 public static By setFilterKategorija(String filterKategorija){
     String filterKategorijaLocator = "(//span[@class='Collapsible__trigger is-closed'][text()='*****'])[2]";
