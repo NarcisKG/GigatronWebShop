@@ -5,11 +5,11 @@ import Core.Locators;
 
 public class HomePage extends BasePage {
 
-    public HomePage openSearchProizvod(String proizvod) {
+    public HomePage clickOnSearchProizvod(String proizvod) {
         clickOnElement(Locators.setPretragaProizvoda(proizvod));
         return this;}
 
-    public HomePage openFilterLaptop() {
+    public HomePage clickOnFilterLaptop() {
         clickOnElement(Locators.selectFilterLaptop);
         return this;}
 

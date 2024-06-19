@@ -1,7 +1,6 @@
 package Tests;
 
 import PageMethods.HomePage;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -20,8 +19,8 @@ public class GigatronWebShopTest extends HomePage {
     public void test(){
         HomePage test = new HomePage();
 
-        test.openSearchProizvod(PRETRAGA_PROIZVODA).
-             openFilterLaptop();
+        test.clickOnSearchProizvod(PRETRAGA_PROIZVODA).
+                clickOnFilterLaptop();
     }
 
 
