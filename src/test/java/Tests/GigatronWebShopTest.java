@@ -20,7 +20,7 @@ public class GigatronWebShopTest extends HomePage {
         HomePage test = new HomePage();
 
         test.clickOnSearchProizvod(PRETRAGA_PROIZVODA).
-                clickOnFilterLaptop();
+                clickOnFilterLaptop().clickOnLaptopProizvodi();
     }
 
 

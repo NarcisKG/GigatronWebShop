@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0311f921-d2f7-48dc-8dec-9bc8bcea4d43" name="Changes" comment="Commit for Git" />
+    <list default="true" id="0311f921-d2f7-48dc-8dec-9bc8bcea4d43" name="Changes" comment="Commit for Git">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_6_2024__15_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_6_2024__15_32__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Locators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageMethods/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageMethods/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageMethods/PrenosniRacunariPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageMethods/PrenosniRacunariPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/GigatronWebShopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/GigatronWebShopTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

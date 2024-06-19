@@ -16,6 +16,10 @@ public class BasePage extends Properties {
         waitForElementToBeVisible(locator);//
         getDriver().findElement(locator).click();
     }
+    protected void hooverOnElement(By locator){
+        scrollToElement(locator);
+
+    }
 
     protected void waitForElementToBeVisible(By locator) {
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));

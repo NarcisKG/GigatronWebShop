@@ -5,7 +5,7 @@ import Core.Locators;
 
 public class PrenosniRacunariPage extends BasePage {
 
-    public PrenosniRacunariPage selectLaptopProizvode () {
-        clickOnElement(Locators.selectLaptopKategorije);
-        return this;}
+    //public PrenosniRacunariPage selectLaptopProizvode () {
+       // clickOnElement(Locators.selectLaptopKategorije);
+        //return this;}
 }

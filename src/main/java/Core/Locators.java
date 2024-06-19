@@ -10,7 +10,7 @@ public static By setPretragaProizvoda(String vrstaProizvoda){
     return By.xpath(proizvodLocator.replace("*****",vrstaProizvoda));}
 
 public static By selectFilterLaptop = By.xpath("//a[@href='/prenosni-racunari'][text()='Laptop računari']");
-public static By selectLaptopKategorije = By.xpath("//a[@href='/prenosni-racunari/laptop-racunari'][text()='Laptop računari']");
+public static By selectLaptopKategorije = By.xpath("//div[@class='catmenu-main']//a[@href='/prenosni-racunari/laptop-racunari']");
 
 public static By setFilterKategorija(String filterKategorija){
     String filterKategorijaLocator = "(//span[@class='Collapsible__trigger is-closed'][text()='*****'])[2]";

@@ -13,4 +13,8 @@ public class HomePage extends BasePage {
         clickOnElement(Locators.selectFilterLaptop);
         return this;}
 
+    public PrenosniRacunariPage clickOnLaptopProizvodi(){
+        clickOnElement(Locators.selectLaptopKategorije);
+        return new PrenosniRacunariPage();}
+
     }
