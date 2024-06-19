@@ -11,6 +11,6 @@ public class HomePage extends BasePage {
 
     public HomePage openFilterLaptop() {
         clickOnElement(Locators.selectFilterLaptop);
-        return new PrenosniRacunariPage();}
+        return this;}
 
     }

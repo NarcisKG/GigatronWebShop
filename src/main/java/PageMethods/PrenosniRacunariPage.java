@@ -7,5 +7,5 @@ public class PrenosniRacunariPage extends BasePage {
 
     public PrenosniRacunariPage selectLaptopProizvode () {
         clickOnElement(Locators.selectLaptopKategorije);
-        return new LaptopRacunariPage();}
+        return this;}
 }
