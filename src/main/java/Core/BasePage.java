@@ -1,6 +1,7 @@
 package Core;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -16,8 +17,10 @@ public class BasePage extends Properties {
         waitForElementToBeVisible(locator);//
         getDriver().findElement(locator).click();
     }
-    protected void hooverOnElement(By locator){
-        scrollToElement(locator);
+    protected void hoverOnElement(By locator){
+
+        Actions hover = new Actions(driver);
+        hover.moveToElement(driver.findElement(locator)).build().perform();
 
     }
 

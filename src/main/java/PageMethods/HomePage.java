@@ -9,8 +9,8 @@ public class HomePage extends BasePage {
         clickOnElement(Locators.setPretragaProizvoda(proizvod));
         return this;}
 
-    public HomePage clickOnFilterLaptop() {
-        clickOnElement(Locators.selectFilterLaptop);
+    public HomePage hoverOnFilterLaptop() {
+        hoverOnElement(Locators.selectFilterLaptop);
         return this;}
 
     public PrenosniRacunariPage clickOnLaptopProizvodi(){
