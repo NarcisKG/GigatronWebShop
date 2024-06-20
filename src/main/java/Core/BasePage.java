@@ -18,7 +18,6 @@ public class BasePage extends Properties {
         getDriver().findElement(locator).click();
     }
     protected void hoverOnElement(By locator){
-
         Actions hover = new Actions(driver);
         hover.moveToElement(driver.findElement(locator)).build().perform();
 
