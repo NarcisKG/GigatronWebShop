@@ -10,7 +10,7 @@ public static By setPretragaProizvoda(String vrstaProizvoda){
     return By.xpath(proizvodLocator.replace("*****",vrstaProizvoda));}
 
 public static By selectFilterLaptop = By.xpath("//a[@href='/prenosni-racunari'][text()='Laptop računari']");
-public static By selectLaptopKategorije = By.xpath("//div[@class='catmenu-main']//a[@href='/prenosni-racunari/laptop-racunari']");
+public static By selectLaptopKategorija = By.xpath("//li[@class='item-nav3 item-b']//a[@href='/prenosni-racunari/laptop-racunari']");
 
 public static By setFilterKategorija(String filterKategorija){
     String filterKategorijaLocator = "(//span[@class='Collapsible__trigger is-closed'][text()='*****'])[2]";
@@ -21,13 +21,14 @@ public static By setFilterValue(String filterValue){
     return By.xpath(filterValueLocator.replace("*****", filterValue));}
 
 
+public static By selectSortOrder = By.xpath("//div[@class='control']//select[@name='sort']");
 public static By setSortOrder(String sortOrder){
     String sortOrderLocator = "//select[@name='*****']";
     return By.xpath(sortOrderLocator.replace("*****",sortOrder));}
 
-public static By setSelectSearchResult (String searchResult){
-    String searchResultLocator = "(//a[@href='/laptop-racunari/*****'])[1]";
-    return By.xpath(searchResultLocator.replace("*****", searchResult));}
+public static By setSelectSearchResult (String setSearchResult){
+    String searchResultLocator = "//a[@class='item__name'][@href='/laptop-racunari/*****']";
+    return By.xpath(searchResultLocator.replace("*****", setSearchResult));}
 }
 //public static By filterTipProcesora = By.xpath("//span[@id='collapsible-trigger-1718632811832']");
 //public static By odabirTipProcesora = By.xpath();

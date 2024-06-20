@@ -13,8 +13,16 @@ public class HomePage extends BasePage {
         hoverOnElement(Locators.selectFilterLaptop);
         return this;}
 
-    public PrenosniRacunariPage clickOnLaptopProizvodi(){
-        clickOnElement(Locators.selectLaptopKategorije);
-        return new PrenosniRacunariPage();}
+    public HomePage hoverOnSubFilterLaptop(){
+        hoverOnElement(Locators.selectLaptopKategorija);
+        return this;}
+
+    public HomePage clickOnSubFilterLaptop(){
+        clickOnElement(Locators.selectLaptopKategorija);
+    return this;}
+
+    public LaptopRacunariPage selectProizvodjac(String proizvodjac){
+        clickOnElement(Locators.setFilterValue(proizvodjac));
+        return new LaptopRacunariPage();}
 
     }
