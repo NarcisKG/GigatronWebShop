@@ -2,6 +2,7 @@ package PageMethods;
 
 import Core.BasePage;
 import Core.Locators;
+import org.openqa.selenium.By;
 
 public class LaptopRacunariPage extends BasePage {
 
@@ -12,6 +13,9 @@ public class LaptopRacunariPage extends BasePage {
 
     public LaptopRacunariPage clickOnSortOrder(){
         clickOnElement(Locators.selectSortOrder);
+        return this;}
+    public LaptopRacunariPage selectSortOrderType (String sortOrderType){
+        clickOnElement(Locators.setSortOrder(sortOrderType));
         return this;}
 
     public LaptopRacunariPage clickOnSearchResult(String searchResult) {

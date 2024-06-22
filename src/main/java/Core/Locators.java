@@ -21,9 +21,9 @@ public static By setFilterValue(String filterValue){
     return By.xpath(filterValueLocator.replace("*****", filterValue));}
 
 
-public static By selectSortOrder = By.xpath("//div[@class='control']//select[@name='sort']");
+public static By selectSortOrder = By.xpath("//select[@name='sort']//option[text()='Najnižoj ceni']");
 public static By setSortOrder(String sortOrder){
-    String sortOrderLocator = "//select[@name='*****']";
+    String sortOrderLocator = "//select[@name='sort']//option[text()='*****']";
     return By.xpath(sortOrderLocator.replace("*****",sortOrder));}
 
 public static By setSelectSearchResult (String setSearchResult){

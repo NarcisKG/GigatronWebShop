@@ -13,7 +13,7 @@ public class GigatronWebShopTest extends HomePage {
     public static final String VREDNOST_CPU = "Intel Core i7";
     public static final String FILTER_RAM = "RAM (memorija)";
     public static final String VREDNOST_RAM = "8GB";
-    public static final String SORT_ORDER = "sort";
+    public static final String SORT_ORDER = "Najvišoj ceni";
     public static final String SEARCH_RESULT = "dell-vostro-3520-i78512-583238";
 
     @BeforeEach
@@ -29,7 +29,8 @@ public class GigatronWebShopTest extends HomePage {
         test.clickOnSearchProizvod(PRETRAGA_PROIZVODA).
                 hoverOnFilterLaptop().hoverOnSubFilterLaptop().
                 clickOnSubFilterLaptop().selectProizvodjac(PROIZVODJAC).
-                selectFilters(FILTER_CPU,VREDNOST_CPU).selectFilters(FILTER_RAM,VREDNOST_RAM).clickOnSearchResult(SEARCH_RESULT);
+                selectFilters(FILTER_CPU,VREDNOST_CPU).selectFilters(FILTER_RAM,VREDNOST_RAM).
+                selectSortOrderType(SORT_ORDER);
         //selectSortOrder();
     }
 
