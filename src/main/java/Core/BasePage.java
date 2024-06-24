@@ -11,7 +11,11 @@ import java.util.Set;
 
 public class BasePage extends Properties {
 
-    //final String originalWindow = getDriver().getWindowHandle();
+    protected void moveToElement(By locator){
+        Actions move = new Actions(driver);
+        move.moveToElement(driver.findElement(locator)).click().perform();
+    }
+
     protected void clickOnElement(By locator) {
         scrollToElement(locator);
         waitForElementToBeVisible(locator);//

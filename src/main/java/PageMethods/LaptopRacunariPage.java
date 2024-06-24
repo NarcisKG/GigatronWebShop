@@ -11,14 +11,17 @@ public class LaptopRacunariPage extends BasePage {
         clickOnElement(Locators.setFilterValue(filterVrednost));
         return this;}
 
-    public LaptopRacunariPage clickOnSortOrder(){
-        clickOnElement(Locators.selectSortOrder);
-        return this;}
+
     public LaptopRacunariPage selectSortOrderType (String sortOrderType){
         clickOnElement(Locators.setSortOrder(sortOrderType));
         return this;}
 
-    public LaptopRacunariPage clickOnSearchResult(String searchResult) {
-        clickOnElement(Locators.setSelectSearchResult(searchResult));
+    public LaptopRacunariPage moveToSearchResult(String searchResult) {
+        moveToElement(Locators.setSelectSearchResult(searchResult));
+
         return this;}
+
+    public LaptopInfoPage clickOnSearchResult() {
+        clickOnElement(By.xpath("//a[@class='item__name']//h4[text()='DELL Vostro 3520 i7/8/512']"));
+        return new LaptopInfoPage();}
 }

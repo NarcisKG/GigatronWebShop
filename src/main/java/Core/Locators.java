@@ -27,11 +27,7 @@ public static By setSortOrder(String sortOrder){
     return By.xpath(sortOrderLocator.replace("*****",sortOrder));}
 
 public static By setSelectSearchResult (String setSearchResult){
-    String searchResultLocator = "//a[@class='item__name'][@href='/laptop-racunari/*****']";
+    String searchResultLocator = "//a[@class='item__image']//img[@alt='*****']";
     return By.xpath(searchResultLocator.replace("*****", setSearchResult));}
 }
-//public static By filterTipProcesora = By.xpath("//span[@id='collapsible-trigger-1718632811832']");
-//public static By odabirTipProcesora = By.xpath();
 
-//public static By filterRamMemorije = By.xpath();
-//public static By sortMenu = By.xpath("");
