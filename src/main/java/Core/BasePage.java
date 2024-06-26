@@ -13,35 +13,33 @@ public class BasePage extends Properties {
 
     protected void moveToElement(By locator){
         Actions move = new Actions(driver);
-        move.moveToElement(driver.findElement(locator)).click().perform();
-    }
+        move.moveToElement(driver.findElement(locator)).click().perform();}
 
     protected void clickOnElement(By locator) {
         scrollToElement(locator);
         waitForElementToBeVisible(locator);//
-        getDriver().findElement(locator).click();
-    }
+        getDriver().findElement(locator).click();}
+
+    protected void clickOnElementTop(By locator) {
+        scrollToElementTop(locator);
+        waitForElementToBeVisible(locator);//
+        getDriver().findElement(locator).click();}
+
     protected void hoverOnElement(By locator){
         Actions hover = new Actions(driver);
-        hover.moveToElement(driver.findElement(locator)).build().perform();
-
-    }
+        hover.moveToElement(driver.findElement(locator)).build().perform();}
 
     protected void waitForElementToBeVisible(By locator) {
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-    }
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));}
 
     protected void typeText(String text, By locator) {
         waitForElementToBeVisible(locator);
-        getDriver().findElement(locator).sendKeys(text);
-    }
+        getDriver().findElement(locator).sendKeys(text);}
 
     protected String getElementText(By locator) {
         waitForElementToBeVisible(locator);
-        return getDriver().findElement(locator).getText();
-
-    }
+        return getDriver().findElement(locator).getText();}
 
     protected String getLocator(String locator, String arg) {
         return locator.replace("%ARG%", arg);
@@ -61,13 +59,25 @@ public class BasePage extends Properties {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView(true);", element);}
 
+    private void scrollToElementTop(WebDriver driver, WebElement element){
+        JavascriptExecutor jsTop = (JavascriptExecutor) driver;
+        jsTop.executeScript("scroll(250, 0)");}
+
+    private void scrollToElementTop (By locator){
+        scrollToElementTop(getDriver(), findElement(getDriver(),locator));}
+
+    private void scrollToElementBottom(WebDriver driver, WebElement element){
+        JavascriptExecutor jsBottom = (JavascriptExecutor) driver;
+        jsBottom.executeScript("scroll(0, 250)");}
+
+
+
     private WebElement findElement(WebDriver driver, By by) {
         return driver.findElement(by);
     }
 
     public void scrollToElement(By locator){
-        scrollToElement(getDriver(),
-                findElement(getDriver(), locator));}
+        scrollToElement(getDriver(),findElement(getDriver(), locator));}
 
     protected int getElementCount(String locator){
         List<WebElement> webElements = getDriver().findElements(By.xpath(locator));

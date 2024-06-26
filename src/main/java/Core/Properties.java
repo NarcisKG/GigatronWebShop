@@ -22,6 +22,8 @@ public class Properties {
             options.addArguments("start-maximized");
             options.addArguments("--disable-notifications");
 
+
+
             driver=new ChromeDriver(options);
 
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

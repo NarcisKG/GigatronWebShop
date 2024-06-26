@@ -1,6 +1,7 @@
 package Tests;
 
 import PageMethods.HomePage;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -30,14 +31,15 @@ public class GigatronWebShopTest extends HomePage {
                 clickOnSubFilterLaptop().selectProizvodjac(PROIZVODJAC).
                 selectFilters(FILTER_CPU,VREDNOST_CPU).selectFilters(FILTER_RAM,VREDNOST_RAM).
                 selectSortOrderType(SORT_ORDER).
+                clickOnCookiesOption().
                 moveToSearchResult(SEARCH_RESULT).
-                clickOnSearchResult();
-                //clickOnSearchResult();
+                clickOnSearchResult(SEARCH_RESULT);
+
 
     }
 
 
 
-    //@AfterEach
-    //public void close(){quitDriver();}
+    @AfterEach
+    public void close(){quitDriver();}
 }

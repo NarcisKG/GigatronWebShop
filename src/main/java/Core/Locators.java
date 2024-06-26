@@ -26,6 +26,8 @@ public static By setSortOrder(String sortOrder){
     String sortOrderLocator = "//select[@name='sort']//option[text()='*****']";
     return By.xpath(sortOrderLocator.replace("*****",sortOrder));}
 
+public static By selectCookieOption = By.xpath("(//button[@class='btn primary'])[1]");
+
 public static By setSelectSearchResult (String setSearchResult){
     String searchResultLocator = "//a[@class='item__image']//img[@alt='*****']";
     return By.xpath(searchResultLocator.replace("*****", setSearchResult));}
