@@ -32,8 +32,8 @@ public class GigatronWebShopTest extends HomePage {
                 selectFilters(FILTER_CPU,VREDNOST_CPU).selectFilters(FILTER_RAM,VREDNOST_RAM).
                 selectSortOrderType(SORT_ORDER).
                 clickOnCookiesOption().
-                moveToSearchResult(SEARCH_RESULT).
-                clickOnSearchResult(SEARCH_RESULT);
+                selectSearchResult(SEARCH_RESULT);
+
 
 
     }

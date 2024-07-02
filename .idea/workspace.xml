@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0311f921-d2f7-48dc-8dec-9bc8bcea4d43" name="Changes" comment="Commit for Git">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_6_2024__18_46_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_6_2024__18_46__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_6_2024__15_27_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_6_2024__15_27__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Core/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Core/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Locators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Properties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Properties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageMethods/LaptopInfoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageMethods/LaptopInfoPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageMethods/LaptopRacunariPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageMethods/LaptopRacunariPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/GigatronWebShopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/GigatronWebShopTest.java" afterDir="false" />
     </list>
@@ -177,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719245750948</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Commit for Git">
+      <option name="closed" value="true" />
+      <created>1719414957843</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1719414957843</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

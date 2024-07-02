@@ -2,7 +2,6 @@ package PageMethods;
 
 import Core.BasePage;
 import Core.Locators;
-import org.openqa.selenium.By;
 
 public class LaptopRacunariPage extends BasePage {
 
@@ -18,14 +17,9 @@ public class LaptopRacunariPage extends BasePage {
 
     public LaptopRacunariPage clickOnCookiesOption(){
         clickOnElement(Locators.selectCookieOption);
-    return this;}
-
-    public LaptopRacunariPage moveToSearchResult(String searchResult) {
-        moveToElement(Locators.setSelectSearchResult(searchResult));
-
         return this;}
 
-    public LaptopInfoPage clickOnSearchResult(String searchResult) {
-        clickOnElementTop(Locators.setSelectSearchResult(searchResult));
+    public LaptopInfoPage selectSearchResult(String searchResult) {
+        moveToElement(Locators.setSelectSearchResult(searchResult));
         return new LaptopInfoPage();}
 }

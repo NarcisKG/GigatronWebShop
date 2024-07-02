@@ -89,11 +89,8 @@ public class BasePage extends Properties {
         driver.switchTo().window((String) handles.toArray()[1]);}
 
     protected void switchToMainWindow(){
-        //getDriver().switchTo().window(originalWindow);
-        final String originalWindow = getDriver().getWindowHandle();}
 
-//protected void switchToMainContent(){
-    //  getDriver().switchTo().window(originalWindow);}
+        final String originalWindow = getDriver().getWindowHandle();}
 
     protected void switchToMainPageContent(){
         getDriver().switchTo().defaultContent();

@@ -31,5 +31,13 @@ public static By selectCookieOption = By.xpath("(//button[@class='btn primary'])
 public static By setSelectSearchResult (String setSearchResult){
     String searchResultLocator = "//a[@class='item__image']//img[@alt='*****']";
     return By.xpath(searchResultLocator.replace("*****", setSearchResult));}
+
+public static By setBrandName (String brandName){
+    String brandNameLocator = "//div[@class='title-data']//span[text()='*****']";
+    return By.xpath(brandNameLocator.replace("*****",brandName));}
+
+public static By setLapTopInfo (String infoLaptop){
+    String infoLapTopLocator = "//li[@class='clear']//span[text()='*****']";
+return By.xpath(infoLapTopLocator.replace("*****",infoLaptop));}
 }
 
