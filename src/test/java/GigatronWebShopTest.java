@@ -1,5 +1,3 @@
-package Tests;
-
 import PageMethods.HomePage;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -32,7 +30,10 @@ public class GigatronWebShopTest extends HomePage {
                 selectFilters(FILTER_CPU,VREDNOST_CPU).selectFilters(FILTER_RAM,VREDNOST_RAM).
                 selectSortOrderType(SORT_ORDER).
                 clickOnCookiesOption().
-                selectSearchResult(SEARCH_RESULT);
+                selectSearchResult(SEARCH_RESULT).
+                verifyLaptopBrand(PROIZVODJAC);
+
+
 
 
 
