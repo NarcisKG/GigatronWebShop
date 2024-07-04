@@ -36,8 +36,12 @@ public static By getBrandName (String brandName){
     String brandNameLocator = "//div[@class='title-data']//span[text()='*****']";
     return By.xpath(brandNameLocator.replace("*****",brandName));}
 
-public static By getLapTopInfo (String infoLaptop){
+public static By getLaptopInfo(String infoLaptop){
     String infoLapTopLocator = "//li[@class='clear']//span[text()='*****']";
 return By.xpath(infoLapTopLocator.replace("*****",infoLaptop));}
+
+public static By getLaptopInfoValue (String infoLaptopValue){
+    String infoLaptopValueLocator = "//li[@class='clear']//span[text()='*****']";
+return By.xpath(infoLaptopValueLocator.replace("*****",infoLaptopValue));}
 }
 
